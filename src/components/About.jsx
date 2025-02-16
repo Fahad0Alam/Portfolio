@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-content">
         <div className="about-image">
           <img
-            src="\shresthamimi1111-20250214-0002.jpg" // Update this with your actual image path
+            src="/shresthamimi1111-20250214-0002.jpg" // Update this with your actual image path
             alt="Shreshtha"
             className="profile-about-image"
           />
