@@ -1,0 +1,224 @@
+/* Ensure full height and white background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Flexbox container for image & name */
+.container {
+  display: flex;
+  align-items: flex-end;  /* Align image & name with name slightly above */
+  justify-content: center; /* Center horizontally */
+  gap: 120px;  /* Space between image and name */
+  text-align: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  position: absolute;
+  top: 40%;  /* Moves the container slightly above center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Circular Profile Image */
+.profile-image {
+  width: 200px;    /* Keep the increased size */
+  height: 200px;   /* Keep the increased size */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  border: none;    /* Remove any border */
+  margin-top: 20px; /* Slightly lower the image */
+  top:-20px;
+}
+
+/* Profile Name Styling (shifted slightly upward) */
+.profile-name {
+  font-size: 2em;
+  color: #333;
+  top: -50px; /* Moves the name slightly above the image */
+  white-space: nowrap; /* Prevents name from breaking into multiple lines */
+  margin-top:-15px;
+  border-color: none;
+  border-style: hidden;
+  border:none;
+}
+
+.profile-tagline {
+  font-size: 2.1em; /* Slightly smaller than the name */
+  color: #666;
+  font-style: italic;
+  font-weight: 500;
+  white-space:nowrap;
+  margin-top: -10px;
+}
+
+.profile-greet{
+  font-size: 1.5em;
+  color:#666;
+  top:-100px;
+  margin-bottom:30px;
+  margin-top:10px;
+}
+
+
+/* Button Styles */
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center;
+  padding: 10px 5px; /* Add padding to both left and right sides */
+  z-index: 10; /* Ensure the navbar stays on top */
+}
+
+/* Title (Shreshtha) on the left */
+.navbar .navbar-title {
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  color:white;
+}
+
+/* Navbar Links */
+.navbar .navbar-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.navbar .navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for links */
+.navbar .navbar-links a:hover {
+  background-color: #555; /* Darken on hover */
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+
+/* Button container below Civil Engineer text */
+.button-container {
+  margin-top: 20px; /* Add spacing between tagline and buttons */
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px; /* Add padding to the buttons */
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #555; /* Darken on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
+/* Social Media Icons container */
+.social-links {
+  top:-10px;
+  margin-top: 10px; /* Add space between buttons and icons */
+  display: flex;
+  justify-content: center; /* Center align the icons */
+  gap: 12px;  /* Space between icons */
+  flex-wrap: wrap;  /* Ensures responsiveness */
+}
+
+/* Social Media Icon Styling */
+.social-icon {
+  font-size: 1.5em;  /* Icon size */
+  color: #333; /* Default color */
+  text-decoration: none; /* No underlines */
+  transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Icons */
+.social-icon:hover {
+  color: #0077b5; /* Change color on hover (LinkedIn color) */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+/* Specific Hover Colors for Each Icon */
+.social-icon:nth-child(1):hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+.social-icon:nth-child(2):hover {
+  color: #333; /* GitHub color */
+}
+
+.social-icon:nth-child(3):hover {
+  color: #ea4335; /* Gmail color */
+}
+
+/* About Section */
+.about-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-about-image {
+  width: 100%;
+  max-width: 300px; /* Set max-width to control image size */
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  padding: 10px;
+  padding-top:45px;
+  text-align: left;
+  color:#000;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
